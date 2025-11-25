@@ -1,0 +1,65 @@
+.header {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h2 {
+  font-size: 30px;
+  font-family: "Calistoga";
+}
+
+.header h2 span {
+  color: #94d4e9;
+  margin-left: -10px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.menu-list {
+  display: flex;
+  list-style: none;
+  gap: 35px;
+  position: relative;
+}
+
+.menu-item {
+  position: relative;
+}
+
+.menu-link {
+  font-family: "Calistoga";
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 10px 0;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.menu-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #94d4e9;
+  transition: width 0.3s ease;
+}
+
+.menu-link:hover::after,
+.menu-link.active::after {
+  width: 100%;
+}
+
+.menu-link:hover {
+  color: #94d4e9;
+  transform: translateY(-3px);
+}
+
+.menu-link.active {
+  color: #94d4e9;
+}

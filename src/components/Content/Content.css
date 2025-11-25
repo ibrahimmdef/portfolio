@@ -1,0 +1,76 @@
+.main {
+  font-size: 80px;
+  margin-top: 20vh;
+  font-family: "Calistoga";
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  overflow: hidden;
+}
+
+.main div {
+  font-family: "Calistoga";
+}
+
+.content {
+  min-width: 800px;
+}
+
+.typewriter {
+  color: #94d4e9;
+  font-size: 80px;
+  font-family: "Calistoga";
+  border-right: 1px solid #fff;
+  padding-right: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: blink 0.7s infinite;
+}
+
+.box-content {
+  position: relative;
+  transform: rotate(-35deg);
+}
+.box-content .box {
+  position: relative;
+  left: -100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: animatesurface 1.5s ease-in-out infinite;
+  border-bottom: 1px solid #94d4e9;
+}
+@keyframes animatesurface {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200px);
+  }
+}
+.box-content .box .cube {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background: #94d4e9;
+  box-shadow: 0 0 0 1px #94d4e9;
+  transform-origin: bottom right;
+  animation: animate 1.5s ease-in-out infinite;
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  60%,
+  70%,
+  80%,
+  100% {
+    transform: rotate(90deg);
+  }
+  65% {
+    transform: rotate(85deg);
+  }
+  75% {
+    transform: rotate(87.5deg);
+  }
+}

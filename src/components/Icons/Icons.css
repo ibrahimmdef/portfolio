@@ -1,0 +1,43 @@
+.container {
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.link {
+  font-family: "Calistoga";
+  text-decoration: none;
+  display: block;
+  margin: 30px 10px;
+  font-size: 25px;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: 1px solid #94d4e9;
+  border-radius: 20px;
+  box-shadow: 2px 3px 2px #94d4e9;
+}
+
+.link:hover {
+  background-color: #94d4e9;
+  transform: translateY(-5px) scale(1.01);
+  transition: all 0.4s;
+  color: black;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+}
+
+.icons img {
+  width: 40px;
+  opacity: 0.3;
+}
+
+.icons img:hover {
+  opacity: 1;
+  box-shadow: 1px #ffffff;
+  transform: translateY(-5px) scale(1.1);
+  transition: all 0.3s;
+}

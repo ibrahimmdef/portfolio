@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Calistoga&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 500;
+  font-style: normal;
+  color: #ffffff;
+}
+
+body {
+  background: hsl(0, 0%, 10%);
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px;
+}
