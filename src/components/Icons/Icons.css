@@ -6,6 +6,7 @@
 }
 
 .link {
+  text-align: center;
   font-family: "Calistoga";
   text-decoration: none;
   display: block;
@@ -40,4 +41,17 @@
   box-shadow: 1px #ffffff;
   transform: translateY(-5px) scale(1.1);
   transition: all 0.3s;
+}
+@media (max-width: 600px) {
+  .link {
+    width: 100%;
+    margin: 50px 0px;
+    font-size: 15px;
+    padding: 7px 15px;
+  }
+  .icons img {
+    margin: 50px 0;
+    width: 30px;
+    opacity: 0.3;
+  }
 }

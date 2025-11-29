@@ -1,4 +1,5 @@
 .main {
+  height: 80vh;
   font-size: 80px;
   margin-top: 20vh;
   font-family: "Calistoga";
@@ -38,7 +39,6 @@
   justify-content: center;
   align-items: center;
   animation: animatesurface 1.5s ease-in-out infinite;
-  border-bottom: 1px solid #94d4e9;
 }
 @keyframes animatesurface {
   0% {
@@ -53,7 +53,7 @@
   width: 200px;
   height: 200px;
   background: #94d4e9;
-  box-shadow: 0 0 0 1px #94d4e9;
+
   transform-origin: bottom right;
   animation: animate 1.5s ease-in-out infinite;
 }
@@ -72,5 +72,37 @@
   }
   75% {
     transform: rotate(87.5deg);
+  }
+}
+
+@media (max-width: 1000px) {
+  .box-content {
+    display: none;
+  }
+
+  .content {
+    min-width: 720px;
+  }
+}
+@media (max-width: 800px) {
+  .box-content {
+    display: none;
+  }
+
+  .content {
+    min-width: 620px;
+  }
+}
+@media (max-width: 600px) {
+  .main {
+    height: 100%;
+    font-size: 40px;
+    margin: 150px 0;
+  }
+  .typewriter {
+    font-size: 35px;
+  }
+  .content {
+    min-width: 320px;
   }
 }

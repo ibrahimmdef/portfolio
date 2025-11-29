@@ -3,11 +3,7 @@ import "./Content.css";
 import Icon from "../Icons/Icons";
 
 function Content() {
-  const titles = [
-    "Frontend Developer",
-    "Backend Developer",
-    "Full-Stack Developer",
-  ];
+  const titles = ["Frontend Developer", "Backend Developer", "I mean I hope "];
 
   const [text, setText] = useState("");
   const [index, setIndex] = useState(0);
@@ -51,9 +47,9 @@ function Content() {
         <Icon />
       </div>
 
-      <div class="box-content">
-        <div class="box">
-          <div class="cube"></div>
+      <div className="box-content">
+        <div className="box">
+          <div className="cube"></div>
         </div>
       </div>
     </main>

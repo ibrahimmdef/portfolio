@@ -1,13 +1,13 @@
 import Mail from "../../assets/mail.svg";
 import Linkedin from "../../assets/linkedin.svg";
 import Github from "../../assets/github.svg";
-import pdf from "../../../public/IBRAHIMIBRAHIMOV.pdf";
+import cv from "../../../src/assets/PDF/IBRAHIMIBRAHIMOV.pdf";
 import "./Icons.css";
 function Icon() {
   return (
     <div className="container">
       <div className="pdf">
-        <a href="cv.pdf" download={pdf} className="link">
+        <a href={cv} download className="link">
           Get Resume
         </a>
       </div>

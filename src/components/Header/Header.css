@@ -63,3 +63,50 @@
 .menu-link.active {
   color: #94d4e9;
 }
+
+.mobile-menu {
+  display: none;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 60%;
+    height: 100vh;
+    background-color: hsl(0, 0%, 12%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: right 0.4s ease;
+    z-index: 1000;
+  }
+
+  nav.active {
+    right: 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  nav a {
+    font-size: 24px;
+    letter-spacing: 2px;
+  }
+
+  .mobile-menu {
+    display: block;
+    position: relative;
+    z-index: 1001;
+  }
+
+  header {
+    padding: 20px 30px;
+  }
+}
