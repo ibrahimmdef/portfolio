@@ -13,18 +13,24 @@ function Icon() {
       </div>
       <div className="icons">
         <span>
-          <a href="">
-            <img src={Github} alt="" />
+          <a href="https://github.com/ibrahimmdef" target="blank">
+            <img src={Github} alt="github" />
           </a>
         </span>
         <span>
-          <a href="">
-            <img src={Linkedin} alt="" />
+          <a
+            href="https://www.linkedin.com/in/ibrahim-ibrahimov-51383a379/"
+            target="blank"
+          >
+            <img src={Linkedin} alt="linkedin" />
           </a>
         </span>
         <span>
-          <a href="">
-            <img src={Mail} alt="" />
+          <a
+            href="mailto:ibrahimibrahimov.dev@gmail.com
+"
+          >
+            <img src={Mail} alt="mail" />
           </a>
         </span>
       </div>
